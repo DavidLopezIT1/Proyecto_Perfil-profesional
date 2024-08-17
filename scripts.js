@@ -9,7 +9,7 @@ document.querySelectorAll('.modal-btn').forEach(button => {
         const modalId = this.getAttribute('data-modal');
         const modal = document.getElementById(modalId);
         modal.style.display = 'flex';
-    });
+    }); 
 });
 
 document.querySelectorAll('.modal .close').forEach(closeBtn => {
