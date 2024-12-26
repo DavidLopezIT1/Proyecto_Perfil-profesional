@@ -12,7 +12,7 @@ body {
     display: flex;
     margin: 0;
 }
-  
+
 #sidebar {
     width: 25%;
     background: #111111;
@@ -73,7 +73,7 @@ nav ul li {
 }
 
 nav ul li a {
-    
+
     color: #fff;
     text-decoration: none;
     font-size: 1.2rem;
@@ -92,7 +92,7 @@ nav ul li a {
     background: #fff;
     border: 1px solid #ddd;
     border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     animation: fadeIn 1s ease;
 }
 
@@ -120,20 +120,81 @@ nav ul li a {
     top: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0,0,0,0.8);
-    justify-content: center;
+    background: rgba(0, 0, 0, 0.8);
+    /* justify-content: ; */
     align-items: center;
     z-index: 1000;
 }
 
 .modal img {
-    max-width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 80%;
     max-height: 80%;
     border: 2px solid #fff;
-    margin: 0.5rem;
 }
 
+.modal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#prev-btn,
+#next-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: linear-gradient(45deg, #6a11cb, #2575fc);
+    /* Degradado impresionante */
+    color: #fff;
+    border: none;
+    font-size: 2.5rem;
+    /* Tamaño más impactante */
+    padding: 15px 30px;
+    cursor: pointer;
+    border-radius: 15%;
+    /* Forma circular */
+    /* box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); */
+    /* Sombra elegante */
+    z-index: 1001;
+    transition: transform 0.3s ease, background 0.3s ease, box-shadow 0.3s ease;
+}
+
+#prev-btn:hover,
+#next-btn:hover {
+    background: linear-gradient(45deg, #ff512f, #dd2476);
+    /* Cambia a un degradado más vibrante */
+    transform: scale(1.2);
+    /* Aumenta ligeramente de tamaño */
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.5);
+    /* Más sombra al pasar el ratón */
+}
+
+#prev-btn {
+    left: 20px;
+    /* Más separación del borde */
+}
+
+#next-btn {
+    right: 20px;
+    /* Más separación del borde */
+}
+
+#prev-btn:active,
+#next-btn:active {
+    transform: scale(1);
+    /* Regresa al tamaño original al hacer clic */
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    /* Menor sombra al hacer clic */
+    background: linear-gradient(45deg, #3a7bd5, #3a6073);
+    /* Un degradado más oscuro al hacer clic */
+}
+
+
 .close {
+
     position: absolute;
     top: 1rem;
     right: 1rem;
@@ -146,20 +207,28 @@ nav ul li a {
     from {
         opacity: 0;
     }
+
     to {
         opacity: 1;
     }
 }
-li{
+
+li {
     margin-left: 16px;
 }
-ul{
+
+ul {
     margin-bottom: 30px;
 }
-.modal-btn{
-    margin-top:12px;
+
+.modal-btn {
+    margin-top: 12px;
     height: 30px;
     width: 100px;
     color: azure;
     background-color: #555;
+}
+
+.masterv2 {
+    display: block;
 }

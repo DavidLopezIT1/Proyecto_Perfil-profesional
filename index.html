@@ -1,14 +1,15 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Profesional Profile David López</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <div id="sidebar">
-        <!-- <button id="toggle-btn">☰</button> -->
         <div id="sidebar-content">
             <div class="profile">
                 <img src="DavidLPHOTO.jpg" alt="Perfil" id="DavidLPHOTO.jpg" style="width: 60%; border-radius: 50%;">
@@ -26,76 +27,73 @@
         </div>
     </div>
     <button id="toggle-btn">☰</button>
-    
+
     <div id="main-content">
         <section id="about" class="module">
             <h2>About Me</h2>
-            <p>Software Engineering student, I am a Full Stack Developer with knowledge in Agile Scrum, HTML5, CSS3, PHP 8, JavaScript,
-                 with a solid foundation in database management MySQL and Structured Query Language SQL. Passionate about web development and continuous learning.
-
-
+            <p>Software Engineering student, I am a Full Stack Developer with knowledge in Agile Scrum, HTML5, CSS3, PHP
+                8, JavaScript,
+                with a solid foundation in database management MySQL and Structured Query Language SQL. Passionate about
+                web development and continuous learning.
             </p>
-        </section> 
-        
+        </section>
+
         <section id="experience" class="module">
             <h2>Work experience</h2>
             <div class="experience-item">
-
-                <h3>SystemsAnalyst - Roldán Logística</h3>
+                <h3>Systems Analyst - Roldán Logística</h3>
                 <p>April 2024 - Present</p>
-                <p>administration and support of comprehensive information systems and foreign trade procedures, software project management, development of Microsoft applications, Power apps, power automate, Microsoft Suite. 
-                    conceptualization of requirements and new projects</p>
+                <p>Administration and support of comprehensive information systems and foreign trade procedures,
+                    software project management, development of Microsoft applications, Power apps, power automate,
+                    Microsoft Suite.
+                    Conceptualization of requirements and new projects.</p>
             </div>
             <div class="experience-item">
                 <h3>Software Developer - openTecnología</h3>
                 <p>August 2022 - March 2024</p>
-                <p>Support and administration of comprehensive information systems and foreign trade procedures, software project management, conceptualization of requirements and new projects.</p>
-               
+                <p>Support and administration of comprehensive information systems and foreign trade procedures,
+                    software project management, conceptualization of requirements and new projects.</p>
             </div>
         </section>
-        
+
         <section id="skills" class="module">
             <h2>Skills</h2>
             <ul>
-                <li>Proyect </li>
+                <li>Project Management</li>
                 <li>HTML5 & CSS3</li>
                 <li>JavaScript</li>
-                <li>SQL, MySQL DBEaver</li>
+                <li>SQL, MySQL, DBEaver</li>
                 <li>Multimedia Production</li>
-                <li>Diseño UX/UI - Figma, Canva</li>
+                <li>UX/UI Design - Figma, Canva</li>
                 <li>PHP-8</li>
-                <li>Fundamentals - Linux Shell Script</li>
-                <li>Google Suite - App Scripts for process automation</li>
+                <li>Linux Shell Scripting</li>
+                <li>Google Suite - App Scripts</li>
                 <li>Microsoft Office 365</li>
-
                 <button class="modal-btn" data-modal="modal2">See certificates</button>
-                <div id="modal2" class="modal">
-                    <span class="close">&times;</span>
-                    <img src="Captura de pantalla 2024-08-16 000416.png" alt="Proyecto 3">
-                    <img src="Captura de pantalla 2024-08-16 000436.png" alt="Proyecto 3">
-                    <img src="Captura de pantalla 2024-08-16 000455.png" alt="Proyecto 3">
-                    <img src="Captura de pantalla 2024-08-16 000651.png" alt="Proyecto 3">
-                    <img src="UC-266c45ca-d582-4113-8919-7186dc354550.jpg" alt="Proyecto 3">
-                    <img src="UC-92801e38-0111-4331-a261-3b69bba30ba0 (1).jpg" alt="Proyecto 3">
-                    <img src="UC-92801e38-0111-4331-a261-3b69bba30ba0.jpg" alt="Proyecto 3">
-                    <img src="UC-fa29bc3d-a0f2-4db8-b6cb-5033f0fc6aa9.jpg" alt="Proyecto 3">
+            </ul>
+            <div id="modal2" class="modal">
 
+                <span class="close masterv2">&times;</span>
+                <button id="prev-btn">&larr;</button>
 
+                <div id="image-container">
+                    <img id="current-image" src="Captura de pantalla 2024-08-16 000416.png" alt="Certificado">
                 </div>
-                
+                <button id="next-btn">&rarr;</button>
+            </div>
+        </section>
+
+        <section id="contact" class="module">
+            <h2>Contact</h2>
+            <p>You can contact me through the following channels:</p>
+            <ul>
+                <li>Email: <a href="mailto:santyfcw@gmail.com">santyfcw@gmail.com</a></li>
+                <li>Phone: 3012386736</li>
             </ul>
         </section>
-        
-        <section id="contact" class="module">
-            <h2>Contact </h2>
-            <p>You can contact me through the following channels</p>
-               <ul>
-                <li>E-Mail: <a href="mailto:santyfcw@gmail.com">santyfcw@gmail.com</a></li>
-                <li>Phone Number: 3012386736</li>
-               </ul>
-        </section>
     </div>
-    
+
     <script src="scripts.js"></script>
 </body>
+
 </html>
